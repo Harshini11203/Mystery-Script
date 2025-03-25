@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Circle (Yellow Border) -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#DAFF80"
+        android:strokeWidth="2"
+        android:pathData="M12,2 A10,10 0 1,1 12,22 A10,10 0 1,1 12,2" />
+
+    <!-- Play Icon (Red Color) -->
+    <path
+        android:fillColor="#EE1313"
+        android:pathData="M9,6l9,6l-9,6z"/>
+</vector>

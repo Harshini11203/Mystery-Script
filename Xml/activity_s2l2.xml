@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".s2l2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tvLevel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:shadowColor="#8A2BE2"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:fontFamily="sans-serif"
+            android:text="LEVEL 2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPlayAudio2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DAFF80"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/baseline_spatial_audio_off_24"
+            android:drawableTint="#000000" />
+
+    </RelativeLayout>
+
+    <!-- Level Title -->
+
+    <!-- Star Rating -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star12"
+            android:src="@drawable/baseline_star_outline_24" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star22"
+            android:src="@drawable/baseline_star_outline_24" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star32"
+            android:src="@drawable/baseline_star_outline_24" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Text Container for Synopsis -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="380dp"
+        android:layout_height="230dp"
+        android:background="@drawable/round_rectangle"
+        android:padding="12dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvRunningText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Renowned archaeologist Dr. Aarav Khanna was leading an excavation in Hampi, Karnataka, when he mysteriously vanished overnight. His tent remained untouched—his wallet, phone, and research notes were still there, yet he was nowhere to be found.
+A day before his disappearance, Dr. Khanna had told his team that he had uncovered something groundbreaking. His last known words, scribbled hastily in his research journal, were:
+📝The truth was always hidden in the carvings. The lion does not roar in vain.
+There were no signs of forced entry or struggle, and whispers of an ancient legend about a hidden royal treasure began circulating. Investigators must follow historical clues, decipher ancient symbols, and uncover secrets buried in time to locate him.
+Can you solve the mystery and find Dr. Khanna before it’s too late?"
+            android:lineSpacingExtra="10sp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="🔎 Dr. Khanna’s journal had a half-smudged note. Only part of the text was legible:
+ The lion does not roar in vain... Follow the ____ beneath the gaze.
+ What is the missing word that will lead to the next clue?"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/wavy_rectangle"
+        android:id="@+id/tv2"/>
+    <!-- Multiple Choice Answers -->
+    <RadioGroup
+        android:id="@+id/radioGroupOptions2"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/option12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Echo"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/option22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Path"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/option32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shadow"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <RadioButton
+            android:id="@+id/option42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stone"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RadioGroup>
+    <!-- Submit Button -->
+    <ImageView
+        android:id="@+id/stampImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/redstamp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"/>
+    <ImageButton
+        android:id="@+id/btnSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:src="@drawable/baseline_keyboard_double_arrow_right_24" />
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".s2l3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="8dp"
+            android:shadowColor="#8A2BE2"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:text="LEVEL 3"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPlayAudio"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DAFF80"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/baseline_spatial_audio_off_24"
+            android:drawableTint="#000000" />
+
+    </RelativeLayout>
+    <!-- Star Rating -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star1"
+            android:src="@drawable/baseline_star_outline_24" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star2"
+            android:src="@drawable/baseline_star_outline_24" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/star3"
+            android:src="@drawable/baseline_star_outline_24" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Text Container for Synopsis -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/round_rectangle"
+        android:padding="12dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvRunningText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="On December 24, 1999, Indian Airlines Flight IC-814 departed from Kathmandu, Nepal, bound for New Delhi, India. Mid-flight, five masked hijackers seized control, changing the plane's course. Over the next seven days, the aircraft moved through multiple countries, finally landing in Kandahar, Afghanistan, under Taliban control.
+
+The hijackers demanded the release of three dangerous militants, including Masood Azhar, who would later become one of India’s most wanted terrorists. But hidden within their communications was a mysterious encoded message—a clue to the hijackers' true motives.
+
+Can you decode the hidden messages and unravel the truth behind one of India’s most mysterious hijacking cases?"
+            android:lineSpacingExtra="10sp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The eagle lands where the crescent falls at midnight. What does this encoded message reveal?"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/wavy_rectangle"
+        android:id="@+id/tv"/>
+    <!-- Multiple Choice Answers -->
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The hijackers’ escape plan"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The location of the plane"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A hidden accomplice onboard"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A ransom drop-off point"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+    <!-- Submit Button -->
+    <ImageView
+        android:id="@+id/stampImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/redstamp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"/>
+    <ImageButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:src="@drawable/baseline_keyboard_double_arrow_right_24" />
+
+
+</LinearLayout>

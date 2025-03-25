@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Level3">
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/men"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="80dp"> <!-- Ensures content doesn't overlap button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MYSTERY SCRIPT"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+            <!-- Level Indicator -->
+            <TextView
+                android:id="@+id/levelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEVEL 3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/levelText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Ghost Ship of Gujarat"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Star Ratings -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:layout_margin="5dp"/>
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:layout_margin="5dp"/>
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <!-- Crime Scene Image -->
+            <ImageView
+                android:id="@+id/crimeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ship"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Question Box -->
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttontext"
+                android:text="In 1999, a cargo ship from Gujarat set sail for Mumbai with valuable spices and textiles..."
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Answer Options -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) The ship was attacked by sea creatures"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) The crew intentionally sank the ship"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) The ship never actually left Gujarat"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) The disappearance was not due to piracy"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/stampImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/redstamp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Fixed Next Button -->
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

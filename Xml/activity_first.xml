@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".first">
+
+    <!-- Menu Button at the Top-Left -->
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/men"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Centered Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Mystery Script Title -->
+        <ImageView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mystery"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Stage Text -->
+        <ImageView
+            android:id="@+id/stageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stage"
+            android:layout_marginBottom="35dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Level 1 Button (Increased Size) -->
+        <ImageButton
+            android:id="@+id/btnLevel1"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lev1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Level 2 Button (Increased Size) -->
+        <ImageButton
+            android:id="@+id/btnLevel2"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lev2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+        <!-- Level 3 Button (Increased Size) -->
+        <ImageButton
+            android:id="@+id/btnLevel3"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/leve3"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

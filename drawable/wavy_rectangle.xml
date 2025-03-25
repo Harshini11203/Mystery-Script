@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Green Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#008B45"/> <!-- Green border -->
+            <padding android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner Yellow Shape -->
+    <item android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DAFF80"/> <!-- Light yellow -->
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Level2">
+
+    <!-- Menu Button (Top-Left) -->
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/men"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:contentDescription="Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Level Indicator -->
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEVEL 2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"/>  <!-- Reduced from 10dp -->
+
+    <TextView
+        android:id="@+id/levelText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" The Vanishing Temple Treasure"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/levelText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>  <!-- Reduced from 30dp -->
+
+    <!-- Star Ratings -->
+    <LinearLayout
+        android:id="@+id/starContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/levelText1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">  <!-- Reduced from 10dp -->
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_star_outline_24"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_star_outline_24"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_star_outline_24"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <!-- Crime Scene Image -->
+    <ImageView
+        android:id="@+id/crimeImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/idol"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/starContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"/>  <!-- Reduced from 10dp -->
+
+    <!-- Question Box -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttontext"
+        android:text=" Deep inside an ancient South Indian temple, a sacred treasure—an emerald-studded idol of a deity—has mysteriously vanished. The temple priests are in shock, and the police suspect an inside job. \n What is the most suspicious clue left behind?"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/crimeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>  <!-- Reduced from 10dp -->
+
+    <!-- Answer Options -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/questionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">  <!-- Reduced from 10dp -->
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A) A torn piece of saffron cloth"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B) A half-burnt map of the temple"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C) A broken lamp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D) A missing coconut from the offering plate"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+    </RadioGroup>
+
+    <!-- Stamp Image (No Change) -->
+    <ImageView
+        android:id="@+id/stampImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/redstamp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Next Button (No Change) -->
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        android:enabled="false"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
