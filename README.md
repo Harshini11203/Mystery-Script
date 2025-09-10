@@ -1,4 +1,5 @@
-**# Mystery-Script**
+**# Mystery-Script** 
+
 The Mystery Script Game is an interactive Android-based detective game built in Android Studio (Java & XML). Players step into the role of an investigator tasked with solving a high-profile assassination case. The game combines quiz-based challenges, crime scene analysis, hidden clues, and storytelling to create an engaging and immersive experience.
 
 With two stages of gameplay — visual scene investigation and audio-based case analysis — and progressive difficulty levels, the game tests player's logical thinking, observation, and problem-solving skills. A star rating system tracks performance, while animations, visuals, and sound effects add to the narrative depth.
