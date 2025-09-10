@@ -8,34 +8,29 @@ With **two stages of gameplay** — visual scene investigation and audio-based c
 
 ## Features
 
-* **Two-Stage Gameplay**
+* **Quiz-Based Crime Solving**
+  Players answer multiple-choice questions to uncover the truth behind each case.
 
-  * *Stage 1:* Image-based crime scene investigations.
-  * *Stage 2:* Audio-based crime story analysis.
+* **Interactive Crime Scene Images**
+  Zoom-in functionality lets players closely inspect crucial details in the crime scene.
 
-* **Multiple Difficulty Levels**
+* **Timed Clue Analysis**
+  A countdown timer limits the duration of clue examination, adding urgency and challenge.
 
-  * Each stage includes **3 levels** (Easy, Medium, Hard) for progressive challenge.
+* **Audio Integration**
+  Background music and sound effects create a more immersive and engaging experience.
 
-* **Crime Scene Analysis**
+* **Star Rating System**
+  Players earn stars based on accuracy, correct answers, and overall performance.
 
-  * Players examine **images** or **audio stories**, uncover hidden clues, and piece together evidence.
+* **Dynamic Animations & Feedback**
+  Visual effects, dialog-based clues, and animated case conclusions enhance storytelling and gameplay.
 
-* **Quiz-Based Challenges**
+* **In-Game Menu**
+  Options to pause, resume, restart, and control background music for better player control.
 
-  * Multiple-choice questions guide the investigation and test logical reasoning.
-
-* **Final Case Resolution**
-
-  * Identify the **murder weapon, key evidence, and prime suspect** at the end of each level.
-
-* **Performance Tracking**
-
-  * A **star rating system** evaluates accuracy and investigative skill.
-
-* **Immersive Experience**
-
-  * Interactive visuals, animations, and sound effects enhance engagement and storytelling.
+* **Progress Tracking**
+  Levels unlock upon successful case resolution, managed using **SharedPreferences**.
 
 ##  Tech Stack
 
