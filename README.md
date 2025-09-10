@@ -71,7 +71,7 @@ With **two stages of gameplay** — visual scene investigation and audio-based c
 
 ## Screenshots
 
-*(Add your gameplay images here for better presentation)*
+- <a href="https://github.com/Harshini11203/Mystery-Script/tree/main/Mystery%20Script">View Screenshots</a>
 
 
 ## Future Enhancements
